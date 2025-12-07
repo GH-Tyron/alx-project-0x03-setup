@@ -13,6 +13,19 @@ export default function Home() {
     router.push(pageRoute, undefined, { shallow: false})
   }
 
+  import type { HomeProps } from "@/interface";
+
+const Home: React.FC<HomeProps> = ({ title, description }) => {
+  return (
+    <div>
+      <h1>{title}</h1>
+      <p>{description}</p>
+    </div>
+  );
+};
+
+export default Home;
+
   return (
     <div className="min-h-screen bg-gray-100 flex flex-col justify-center items-center text-center">
       {/* Welcome Message */}
