@@ -1,5 +1,5 @@
 ## components/common/Button.tsx
-import { ButtonProps } 
+import { ButtonProps } from @/interfaces/index.tsx
 interface ButtonProps {
   buttonLabel: string
   buttonSize?: string
@@ -26,4 +26,5 @@ const Button = ({ buttonLabel, buttonSize, buttonBackgroundColor, action }: Butt
 }
 
 export default Button;
+
 
