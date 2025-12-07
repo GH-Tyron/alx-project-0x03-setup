@@ -14,6 +14,15 @@ export default function Home() {
     router.push(pageRoute, undefined, { shallow: false})
   }
 
+ const Home: React.FC<PageRouteProps> = ({ title, description }) => {
+  return (
+    <div>
+      <h1>{title}</h1>
+      <p>{description}</p>
+    </div>
+  );
+};
+
   return (
     <div className="min-h-screen bg-gray-100 flex flex-col justify-center items-center text-center">
       {/* Welcome Message */}
